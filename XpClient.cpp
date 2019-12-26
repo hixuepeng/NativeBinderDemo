@@ -5,11 +5,11 @@ int main() {
     sp < IBinder > binder = sm->getService(String16("service.xpservice"));
     if (binder != NULL)
     {
-        printf("get binder\n");
+        printf(" --- get binder\n");
     }
     else
     {
-        printf("failed get binder\n");
+        printf(" ---- failed get binder\n");
     }
 
     sp<IXpService> cs = interface_cast < IXpService > (binder);
